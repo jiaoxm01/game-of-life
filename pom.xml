@@ -415,17 +415,18 @@
                                 <artifactId>gameoflife-build</artifactId>
                                 <version>${project.version}</version>
                             </dependency>
+                            <dependency>  
+    <groupId>org.apache.maven.plugins</groupId>  
+    <artifactId>maven-resources-plugin</artifactId>  
+    <version>2.4.3</version>  
+</dependency> 
                         </dependencies>
                     </plugin>
                 </plugins>
             </build>
             <reporting>
                 <plugins>
-                <dependency>  
-    <groupId>org.apache.maven.plugins</groupId>  
-    <artifactId>maven-resources-plugin</artifactId>  
-    <version>2.4.3</version>  
-</dependency> 
+                
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>cobertura-maven-plugin</artifactId>
